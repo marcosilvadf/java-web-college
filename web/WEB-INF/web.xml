@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>UsuarioServlet</servlet-name>
+        <servlet-class>br.com.bean.UsuarioServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CategoriaServlet</servlet-name>
+        <servlet-class>br.com.bean.CategoriaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TarefaServlet</servlet-name>
+        <servlet-class>br.com.bean.TarefaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PrazoServlet</servlet-name>
+        <servlet-class>br.com.bean.PrazoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UsuarioServlet</servlet-name>
+        <url-pattern>/usuario.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CategoriaServlet</servlet-name>
+        <url-pattern>/categoria.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TarefaServlet</servlet-name>
+        <url-pattern>/tarefa.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PrazoServlet</servlet-name>
+        <url-pattern>/prazo.do</url-pattern>
+    </servlet-mapping>
+</web-app>
